@@ -1,0 +1,493 @@
+/* Général */
+
+:root {
+    --primary:#1E2337;
+    --secondary:#B91372;
+    --white:#fff;
+    --text:#fff;
+    --text-black:#000;
+    --title:#DDA77B;
+    --blue:#6C91C2;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* reset */
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited, a:link {
+    color: inherit;
+}
+
+body {
+    background-color: var(--primary);
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+}
+
+.active {
+    color: var(--blue)!important;
+}
+
+h2{
+    color: var(--title);
+    margin-top: 0;
+}
+
+.wrapper {
+    color: var(--text);
+}
+
+.home-container, .skills-container {
+    height: 100vh;
+}
+
+section {
+    padding: 60px 20px 20px;
+}
+
+.network-container {
+    padding-top: 0;
+}
+.about-container, .achievements-container {
+    background-color: #262C45;
+}
+
+.home-container, .about-container, .skills-container, .achievements-container, .network-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes avatar-beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Header */
+/* nav mobile */
+.navbar {
+    display: none;
+}
+.navbar-mobile{
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    position: fixed;
+    background-color: var(--white);
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    z-index: 99;
+}
+
+.logo img {
+    width: 42px;
+    border-radius: 50%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.navbar-mobile h1 {
+    font-size: 1.6rem;
+}
+.navbar h1, .navbar-mobile h1 {
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.navbar-mobile i{
+    z-index: 99;
+    font-size: 3rem;
+    color: var(--text-black);
+}
+.modal{
+    transition: top 0.9s;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
+}
+ 
+.navbar-mobile .navbar-mobile-list{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-mobile .navbar-mobile-list a{
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    padding: 2rem;
+}
+.change-modal{
+    top:0
+}
+
+/* Accueil */
+.home-container {
+    color: var(--text);
+    height: 100vh;
+}
+.home-name {
+    text-align: center;
+    font-weight: 600;
+}
+
+.home-name p {
+    margin: 0;
+}
+.home-name p:nth-child(1) {
+    font-size: 2.5rem;
+}
+.home-name p:nth-child(2) {
+    font-size: 3.8rem;
+}
+
+.home-name b {
+    color: var(--title);
+}
+
+.home-photo img{
+    display: block;
+    width: 100%;
+    max-width: 50%;
+    min-width: 175px;
+    margin: 40px auto;
+    animation: avatar-beat 5s linear infinite;
+}
+
+
+.home-btn {
+    text-align: center;
+}
+
+button {
+    padding: 0.8rem 3rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
+
+button:hover {
+    background-color: var(--blue);
+    color: var(--text);
+}
+/* Présentation */
+.about-container {
+    margin-top: 50px;
+}
+.about-content {
+    text-align: center;
+    color: var(--text);
+}
+
+
+.about-photo img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* Compétences */
+.skills-container p {
+    text-align: center;
+}
+.skill-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+.skill-card svg {
+    fill: var(--text);
+    max-width: 60px;
+}
+
+/* Réalisation */
+
+.achievement-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+}
+
+.achievement-card img {
+    min-width: 250px;
+    max-width: 100%;
+}
+.card-content {
+    text-align: center;
+}
+
+/* Réseaux */
+
+.achievements-container {
+    margin-bottom: 40px;
+}
+
+.network-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.network-item i{
+    font-size: 4vh;
+    margin: 0 4px;
+    color: var(--text);
+
+}
+
+.network-item i:hover {
+    color: var(--blue);
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    font-size: 1.7vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 5%;
+    padding: 20px 0;
+}
+
+footer p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* TABLETTE */
+@media screen and (min-width : 690px){
+
+    .navbar-mobile{
+        display: none;
+    }
+    /* Header */
+    header {
+        padding: 2rem;
+        position: fixed;
+        width: 100%;
+    }
+    .navbar {
+        display: flex;
+        transition: all .5s ease;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--white);
+        z-index: 99;
+    }
+    .sticky {
+        background-color: white;
+        color: var(--text-black);
+        padding: 1rem 2rem;
+        box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+    nav li {
+        display: inline;
+        margin: 0 1em;
+    }
+    nav a:hover {
+        color: var(--blue);
+    }
+
+    /* accueil */
+    .home-container {
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    /* Footer */
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: right;
+
+    }
+}
+
+@media screen and (min-width : 840px) {
+    .logo h1 {
+        display: block;
+        margin: 0;
+        margin-left: 10px;
+        font-size: 1.8rem;
+    }    
+}
+
+/* ORDINATEUR MINI 1024PX */
+
+@media screen and (min-width : 1024px) {
+
+    /* Général */
+    .wrapper {
+        padding: 5%;
+    }
+
+    .about-container, .network-container {
+        background-color: #262C45;
+    }
+
+    .achievements-container {
+        background-color: var(--primary);
+    }
+
+    section {
+        padding: 0;
+    }
+
+    .navbar .logo:hover {
+        transform: translate(10px, 0);
+        transition: .5s;
+    }
+
+    /* accueil */
+
+   .home-container {
+    display: grid;
+    grid-template-rows: 35vh 50px;
+    grid-template-columns: 1fr .5fr;
+    align-content: center;
+    justify-content: center;
+   }
+
+   .home-container .btn-center {
+    grid-row: 2;
+    text-align: center;
+   }
+
+   .home-name h1, .home-name h2{
+    margin: 0;
+   }
+   .home-name h1:nth-child(2) {
+    font-size: 6.8rem;
+    }
+    .home-name h2:nth-child(3) {
+    font-size: 3rem;
+    color: var(--text);
+    }
+   /* A propos */
+    .about-container {
+        flex-direction: row-reverse;
+        height: auto;
+        margin: 80px 0 40px;
+    }
+    .about-content {
+        text-align: left;
+        padding: 0 30px;
+    }
+    /* 3eme ligne */
+    .third-row {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    /* compétences */
+    .skills-container {
+        height: auto;
+        justify-content: flex-start;
+        width: 40vw;
+        padding-bottom: 40px;
+        padding-top: 80px;
+    }
+
+    .skill-item {
+        width: 100%;
+        justify-content: space-between;
+        margin: auto 0;
+    }
+
+    /* réalisations */
+    .achievements-container {
+        justify-content: flex-start;
+        width: 60vw;
+        margin-bottom: 0 ;
+        padding-top: 80px;
+    }
+
+    .achievement-card {
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .achievement-card img {
+        min-width: auto;
+        width: 300px;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+
+    .achievement-card:hover img {
+        filter: brightness(1);
+        transition: .5s;
+    }
+    .achievement-card:hover {
+        backdrop-filter: brightness(0.8);
+        transition: .5s;
+    }
+    .card-content {
+        flex-grow: 1;
+    }
+
+    /* Réseaux sociaux */
+
+    .network-container {
+        margin-top: 40px;
+        padding: 40px 0;
+    }
+}
+/* nav sticky */
