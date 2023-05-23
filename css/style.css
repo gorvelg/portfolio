@@ -399,7 +399,7 @@ footer p, ul {
 
    .home-container {
     display: grid;
-    grid-template-rows: 35vh 50px;
+    grid-template-rows: 35vh 100px;
     grid-template-columns: 1fr .5fr;
     align-content: center;
     justify-content: center;
