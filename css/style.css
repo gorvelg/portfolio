@@ -483,6 +483,10 @@ footer p, ul {
         flex-grow: 1;
     }
 
+    .card-subtitle {
+        margin: 12px;
+    }
+
     /* Réseaux sociaux */
 
     .network-container {

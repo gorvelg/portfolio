@@ -204,6 +204,25 @@
                 </div>
               </div>
             </a>
+            <a href="https://mmi22f01.sae202.ovh">
+              <!-- card -->
+              <div class="achievement-card">
+                <img
+                  src="images/web-duckysdriver.png"
+                  alt="capture d'écran du site ducky's driver"
+                />
+                <div class="card-content">
+                  <h3>Ducky's Driver</h3>
+                  <p class="card-subtitle">
+                    Site de covoiturage en PHP, MySQL et Javascript. CRUD, avec
+                    un système de recherche et de réservation de trajet (avec
+                    notification par mail). Espace membre personnalisable avec
+                    un système de connexion et de déconnexion. Back office Admin
+                    avec un tableau de bord et des statistiques.
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
         </section>
       </div>
