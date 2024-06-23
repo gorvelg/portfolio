@@ -112,6 +112,7 @@ section {
 .logo {
     display: flex;
     align-items: center;
+    transition: transform 250ms ease-in-out;
 }
 .navbar-mobile h1 {
     font-size: 1.6rem;
@@ -235,9 +236,17 @@ button:hover {
     align-items: center;
     width: 33%;
 }
+.skill-card__img {
+    max-width: 60px;
+    width: 60px;
+    margin: auto;
+}
 .skill-card svg {
     fill: var(--text);
     max-width: 60px;
+}
+.btn-center {
+    margin-top: 24px;
 }
 
 /* Réalisation */
