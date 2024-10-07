@@ -46,20 +46,14 @@
         <div class="about-content">
           <p>
             Bonjour et bienvenue sur mon site portfolio ! Je m'appelle Guillaume
-            Gorvel et je suis étudiant en première année de BUT MMI(Métier du
-            Multimédia et Internet) à l'IUT de Troyes et développeur Web junior.
+            Gorvel, j'ai 28 ans et je suis étudiant BUT MMI(Métier du Multimédia
+            et Internet) à l'IUT de Troyes. Depuis septembre 2024, je suis
+            alternant en tant qu'assistant développeur Web chez Distrame.
           </p>
           <p>
-            À travers mes expériences en tant que chargé de clientèle chez EDF
-            et en effectuant mon service civique à Pole Emploi, j'ai acquis de
-            très bonnes compétences en écoute, relation client, résolution de
-            problèmes et travail en équipe.
-          </p>
-          <p>
-            Passionné par les métiers de la communication, du web et du
-            multimédia, j'ai décidé de reprendre mes études afin de développer
-            des compétences en design graphique, développement web, production
-            audiovisuelle et marketing.
+            Au cours de cette expérience, j'ai eu l'occasion de renforcer mes
+            compétences dans divers domaines, notamment le développement sur
+            Magento et Symfony, ainsi que la gestion de bases de données.
           </p>
           <p>
             À travers ce site, je souhaite vous présenter mes projets et
