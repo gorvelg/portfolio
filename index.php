@@ -46,8 +46,11 @@
         <div class="about-content">
           <p>
             Bonjour et bienvenue sur mon site portfolio ! Je m'appelle Guillaume
-            Gorvel, j'ai 28 ans et je suis étudiant BUT MMI(Métier du Multimédia
-            et Internet) à l'IUT de Troyes. Depuis septembre 2024, je suis
+            Gorvel, j'ai
+            <?php
+              echo (new DateTime('1996-08-14'))->diff(new DateTime('now'))->y .
+            ' ans'; ?> et je suis étudiant BUT MMI(Métier du Multimédia et
+            Internet) à l'IUT de Troyes. Depuis septembre 2024, je suis
             alternant en tant qu'assistant développeur Web chez Distrame.
           </p>
           <p>
@@ -354,6 +357,24 @@
                     notification par mail). Espace membre personnalisable avec
                     un système de connexion et de déconnexion. Back office Admin
                     avec un tableau de bord et des statistiques.
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="https://mmi22f01.sae202.ovh">
+              <!-- card -->
+              <div class="achievement-card">
+                <img
+                  src="images/web-receiptmanager.jpg"
+                  alt="capture d'écran du site receipt manager"
+                />
+                <div class="card-content">
+                  <h3>Receipt Manager</h3>
+                  <p class="card-subtitle">
+                    Application de gestion des tickets de caisse développée avec
+                    Symfony, permettant d'enregistrer les tickets d'un foyer, de
+                    suivre les dépenses mensuelles et de calculer les
+                    remboursements. Un CRON envoie des notifications par mail.
                   </p>
                 </div>
               </div>
